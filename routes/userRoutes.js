@@ -46,7 +46,7 @@ router.post('/login', async (req, res) => {
             maxAge: 60 * 60 * 1000, //1 hr
         })
 
-        return res.status(201).json({ status: true, message: "Login successful" })
+        return res.status(201).json({ status: true, message: "Login successful",authToken:authToken })
     } catch (error) {
         return res.status(400).json({ status: false, message: "Something went wrong", error: error.message })
     }

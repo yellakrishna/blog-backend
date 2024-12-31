@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use(cors({
-    origin:true,
+    origin:"https://blog-frontend-chi-henna.vercel.app",
     credentials:true
 }))
 
