@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use(cors({
-    origin:"https://blog-frontend-yella.netlify.app",
+    origin:"https://blog-frontend-chi-henna.vercel.app",
     credentials:true
 }))
 
